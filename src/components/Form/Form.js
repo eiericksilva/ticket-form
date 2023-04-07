@@ -44,6 +44,7 @@ export const ButtonGroup = styled.div`
 
 export const Body = styled.div`
   display: flex;
+  gap: 10px;
 `;
 
 export const Button = styled.button`
@@ -68,3 +69,70 @@ export const Button = styled.button`
     cursor: pointer;
   }
 `;
+
+export const ContainerOriginDestiny = styled.div`
+  display: flex;
+  width: 392px;
+  height: 60px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 6px;
+
+  align-items: center;
+
+  .BsArrowLeftRight {
+    font-size: 32px;
+    border: 1px solid #808080;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  label {
+    font-size: 10px;
+    color: #888888;
+    margin: 12px 0 4px 42px;
+  }
+
+  input {
+    border: none;
+    text-overflow: ellipsis;
+    outline: none;
+
+    &::placeholder {
+    }
+  }
+`;
+
+export const ContainerOrigin = styled.div`
+  max-width: 50%;
+  border-right: 1px solid #ccc;
+`;
+
+export const BottomOfOrigin = styled.div`
+  display: flex;
+`;
+
+export const ContainerDestiny = styled.div`
+  border-left: 1px solid #ccc;
+`;
+
+export const BottomOfDestiny = styled.div`
+  display: flex;
+`;
+export const ContainerDatas = styled.div`
+  display: flex;
+  width: 392px;
+`;
+
+export const ContainerGoing = styled.div``;
+
+export const ContainerReturn = styled.div``;
+
+export const ContainerPassengersAndClasses = styled.div``;
+
+export const ContainerSwitch = styled.div`
+  width: 100%;
+`;
+
+export const Footer = styled.div``;

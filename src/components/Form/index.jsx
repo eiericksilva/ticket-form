@@ -2,14 +2,28 @@ import React from "react";
 import {
   Background,
   Body,
+  BottomOfDestiny,
+  BottomOfOrigin,
   Button,
   ButtonGroup,
   Container,
+  ContainerDatas,
+  ContainerDestiny,
+  ContainerGoing,
+  ContainerOrigin,
+  ContainerOriginDestiny,
+  ContainerPassengersAndClasses,
+  ContainerReturn,
+  ContainerSwitch,
+  Footer,
   Header,
 } from "./Form";
 
 import { BsAirplane } from "react-icons/bs";
 import { BiBed } from "react-icons/bi";
+import { BsArrowLeftRight } from "react-icons/bs";
+import { ImRadioUnchecked } from "react-icons/im";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Form = () => {
   return (
@@ -29,35 +43,49 @@ const Form = () => {
           </ButtonGroup>
         </Header>
         <Body>
-          <div className="container-od">
-            <div className="origin">
-              <input type="text" placeholder="Insira sua cidade de origem" />
-            </div>
-            <button className="btn-toggle-od">x</button>
-            <div className="destiny">
-              <input type="text" placeholder="Insira sua cidade de destino" />
-            </div>
-          </div>
-          {/* fim origem destino */}
-          <div className="container-datas">
-            <div className="going">
+          <ContainerOriginDestiny>
+            <ContainerOrigin>
+              <label htmlFor="origin">ORIGEM</label>
+              <BottomOfOrigin>
+                <ImRadioUnchecked />
+                <input
+                  id="origin"
+                  type="text"
+                  placeholder="Insira sua cidade de origem"
+                />
+              </BottomOfOrigin>
+            </ContainerOrigin>
+            <BsArrowLeftRight className="BsArrowLeftRight" />
+            <ContainerDestiny>
+              <label htmlFor="destiny">DESTINO</label>
+              <BottomOfDestiny>
+                <HiOutlineLocationMarker />
+                <input
+                  id="destiny"
+                  type="text"
+                  placeholder="Insira sua cidade de destino"
+                />
+              </BottomOfDestiny>
+            </ContainerDestiny>
+          </ContainerOriginDestiny>
+          <ContainerDatas>
+            <ContainerGoing>
               <input type="data" placeholder="Ida" />
-            </div>
-            <div className="return">
+            </ContainerGoing>
+            <ContainerReturn>
               <input type="text" placeholder="Volta" />
-            </div>
-          </div>
-          {/* fim datas */}
-          <div className="passengers-classes">
+            </ContainerReturn>
+          </ContainerDatas>
+          <ContainerPassengersAndClasses>
             <input type="select" value="1 pessoa..." readOnly />
-          </div>
-          {/* fim passengers e classes */}
-          <div className="containerSwitch">
+          </ContainerPassengersAndClasses>
+          <ContainerSwitch>
             <button>toggle</button>
             <span>Buscar pela data mais barata</span>
-          </div>
-          <></>
-          <button>Buscar</button>
+          </ContainerSwitch>
+          <Footer>
+            <button>Buscar</button>
+          </Footer>
         </Body>
       </Container>
     </Background>
