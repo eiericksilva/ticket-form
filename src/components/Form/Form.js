@@ -73,10 +73,10 @@ export const Button = styled.button`
 export const ContainerOriginDestiny = styled.div`
   display: flex;
   width: 392px;
-  height: 60px;
+  min-height: 60px;
+  border-radius: 6px;
   color: #000;
   background-color: #fff;
-  border-radius: 6px;
 
   align-items: center;
 
@@ -120,14 +120,46 @@ export const ContainerDestiny = styled.div`
 export const BottomOfDestiny = styled.div`
   display: flex;
 `;
+
 export const ContainerDatas = styled.div`
   display: flex;
+  align-items: center;
   width: 392px;
+  min-height: 60px;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 14px;
 `;
 
-export const ContainerGoing = styled.div``;
+export const ContainerGoing = styled.div`
+  label {
+    font-size: 10px;
+    color: #888888;
+    margin: 12px 0 4px 25px;
+  }
+`;
 
-export const ContainerReturn = styled.div``;
+export const BottomOfGoing = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    color: #444444;
+  }
+
+  input {
+    border: none;
+  }
+`;
+
+export const ContainerReturn = styled.div`
+  padding-top: 14px;
+
+  input {
+    border: none;
+  }
+`;
 
 export const ContainerPassengersAndClasses = styled.div``;
 

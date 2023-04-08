@@ -3,6 +3,7 @@ import {
   Background,
   Body,
   BottomOfDestiny,
+  BottomOfGoing,
   BottomOfOrigin,
   Button,
   ButtonGroup,
@@ -24,6 +25,7 @@ import { BiBed } from "react-icons/bi";
 import { BsArrowLeftRight } from "react-icons/bs";
 import { ImRadioUnchecked } from "react-icons/im";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BsFillCalendarFill } from "react-icons/bs";
 
 const Form = () => {
   return (
@@ -70,7 +72,11 @@ const Form = () => {
           </ContainerOriginDestiny>
           <ContainerDatas>
             <ContainerGoing>
-              <input type="data" placeholder="Ida" />
+              <label htmlFor="data">DATAS</label>
+              <BottomOfGoing>
+                <BsFillCalendarFill />
+                <input id="data" type="data" placeholder="Ida" />
+              </BottomOfGoing>
             </ContainerGoing>
             <ContainerReturn>
               <input type="text" placeholder="Volta" />
