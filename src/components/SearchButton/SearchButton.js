@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  grid-column: a14;
+  grid-row: a11;
+  align-self: center;
+
   button {
     display: flex;
     align-items: center;

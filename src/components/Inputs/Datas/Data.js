@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  grid-column: a12;
   display: flex;
   align-items: center;
   min-width: 272px;

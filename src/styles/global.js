@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Arial', sans-serif;
         font-size: 14px;
+        /* border: 1px solid red; */
     }
 
     body {

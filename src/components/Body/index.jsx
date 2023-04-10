@@ -13,8 +13,8 @@ const Body = () => {
       <Datas />
       <PassengersAndClasses />
       <ContainerSwitch>
-        <button>toggle</button>
-        <span>Buscar pela data mais barata</span>
+        <input type="checkbox" id="toggle" />
+        <label htmlFor="toggle">Buscar pela data mais barata</label>
       </ContainerSwitch>
       <SearchButton />
     </Container>
