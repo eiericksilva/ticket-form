@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  grid-column: a14;
+  grid-area: a14;
   grid-row: a11;
   align-self: center;
+
+  @media (max-width: 1024px) {
+    grid-area: a52;
+    justify-self: end;
+  }
 
   button {
     display: flex;

@@ -5,14 +5,28 @@ export const Container = styled.div`
   grid-template-areas:
     "a11 a12 a13 a14"
     "a21 a22 a23 a24";
+
+  @media (max-width: 1024px) {
+    grid-template-areas:
+      "a11 a12"
+      "a21 a22"
+      "a31 a32"
+      "a41 a42"
+      "a51 a52";
+  }
   gap: 10px;
 `;
 
 export const ContainerSwitch = styled.div`
-  grid-column: a22 / a23;
+  grid-area: a22;
   width: 100%;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    grid-area: a31;
+    grid-column: 1 / -1;
+  }
 
   input {
     position: relative;

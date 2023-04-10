@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  grid-column: a11;
+  grid-area: a11;
   display: flex;
   min-width: 392px;
   height: 60px;
@@ -10,6 +10,11 @@ export const Container = styled.div`
   background-color: #fff;
 
   align-items: center;
+
+  @media (max-width: 1024px) {
+    grid-area: a11;
+    grid-column: 1 / -1;
+  }
 
   .BsArrowLeftRight {
     font-size: 32px;

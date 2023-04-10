@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  grid-column: a12;
+  grid-area: a12;
   display: flex;
-  align-items: center;
   min-width: 272px;
+  align-items: center;
   height: 60px;
   border-radius: 6px;
   background-color: #fff;
   padding: 14px;
+
+  @media (max-width: 1024px) {
+    grid-area: a21;
+    grid-column: 1 / -1;
+  }
 `;
 
 export const Going = styled.div`

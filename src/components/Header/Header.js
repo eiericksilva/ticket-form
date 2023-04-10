@@ -5,6 +5,15 @@ export const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: start;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 export const Title = styled.h1``;

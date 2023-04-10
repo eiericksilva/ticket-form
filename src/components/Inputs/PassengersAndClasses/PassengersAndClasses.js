@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  grid-column: a13;
+  grid-area: a13;
   height: 60px;
   min-width: 174px;
   background-color: #fff;
@@ -9,6 +9,11 @@ export const Container = styled.div`
   border-radius: 6px;
   padding-left: 10px;
   padding-top: 10px;
+
+  @media (max-width: 1024px) {
+    grid-area: a41;
+    grid-column: 1 / -1;
+  }
 
   label {
     font-size: 10px;
