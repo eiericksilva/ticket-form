@@ -14,7 +14,7 @@ const Header = () => {
         <ItemButton href="#">Só Ida</ItemButton>
         <ItemButton href="#">Multidestino</ItemButton>
         <hr />
-        <ItemButton href="#">
+        <ItemButton href="#" className="complex-button">
           <BsAirplane /> Voo + <BiBed /> Hospedagem
         </ItemButton>
       </ListButton>

@@ -24,6 +24,16 @@ export const ListButton = styled.ul`
     margin-right: 8px;
     border: 1px solid #fff;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .complex-button,
+    hr {
+      display: none;
+    }
+  }
 `;
 
 export const ItemButton = styled.a`
