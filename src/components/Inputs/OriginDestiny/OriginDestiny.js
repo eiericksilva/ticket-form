@@ -44,7 +44,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-      left: 45%;
+      left: 70px;
       top: 35%;
     }
 
