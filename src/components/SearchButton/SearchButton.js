@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   grid-area: a14;
-  grid-row: a11;
   align-self: center;
 
   @media (max-width: 1024px) {
     grid-area: a52;
     justify-self: end;
+  }
+  @media (max-width: 768px) {
+    grid-area: a51;
+    grid-column: 1/3;
+    width: 100%;
   }
 
   button {
@@ -25,6 +29,11 @@ export const Container = styled.div`
 
     box-sizing: border-box;
     padding: 0 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
 
     &:hover {
       cursor: pointer;

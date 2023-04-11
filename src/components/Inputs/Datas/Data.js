@@ -8,7 +8,6 @@ export const Container = styled.div`
   height: 60px;
   border-radius: 6px;
   background-color: #fff;
-  padding: 14px;
 
   @media (max-width: 1024px) {
     grid-area: a21;
@@ -19,12 +18,41 @@ export const Container = styled.div`
 export const Going = styled.div`
   width: 50%;
   height: 100%;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    padding-left: 20px;
+  }
 
   label {
     font-size: 10px;
     color: #888888;
     margin: 12px 0 4px 18px;
+  }
+`;
+
+export const Return = styled.div`
+  width: 50%;
+  padding-top: 16px;
+  height: 100%;
+  border-left: 1px solid #cccccc;
+  padding: 10px;
+  display: flex;
+  align-items: end;
+
+  @media (max-width: 1024px) {
+    padding-left: 20px;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding-left: 20px;
   }
 `;
 
@@ -42,19 +70,5 @@ export const Bottom = styled.div`
     width: 100%;
     padding-left: 10px;
     outline: none;
-  }
-`;
-
-export const Return = styled.div`
-  flex: 1;
-  padding-top: 14px;
-  height: 100%;
-  border-left: 1px solid #ccc;
-
-  input {
-    border: none;
-    width: 100%;
-    outline: none;
-    padding-left: 20px;
   }
 `;

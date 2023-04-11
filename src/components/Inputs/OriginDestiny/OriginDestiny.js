@@ -11,6 +11,8 @@ export const Container = styled.div`
   background-color: #fff;
   align-items: center;
 
+  position: relative;
+
   @media (max-width: 1024px) {
     grid-area: a11;
     grid-column: 1 / -1;
@@ -33,6 +35,19 @@ export const Container = styled.div`
     background-color: #fff;
     cursor: pointer;
 
+    z-index: 10;
+    position: absolute;
+    left: 46%;
+
+    @media (max-width: 1024px) {
+      left: 48%;
+    }
+
+    @media (max-width: 768px) {
+      left: 48%;
+      top: 35%;
+    }
+
     svg {
       width: 32px;
     }
@@ -41,37 +56,52 @@ export const Container = styled.div`
   label {
     font-size: 10px;
     color: #888888;
-    margin: 12px 0 4px 42px;
   }
 
   input {
     border: none;
     outline: none;
-    width: 100%;
+    width: 75%;
     text-overflow: ellipsis;
   }
 `;
 
 export const Origin = styled.div`
   width: 50%;
+  border-right: 1px solid #cccccc;
+  height: 100%;
+  padding-top: 15px;
+
+  label {
+    margin: 12px 0 4px 42px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #cccccc;
+    border-right: none;
   }
 `;
 
-export const BottomOfOrigin = styled.div`
-  display: flex;
-  gap: 10px;
-  padding-left: 20px;
-`;
-
 export const Destiny = styled.div`
-  flex: 1;
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #cccccc;
+  padding: 15px 0 0 18px;
+
+  label {
+    margin: 12px 0 4px 42px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
-    margin-left: 35px;
+    height: 50%;
+    padding-left: 18px;
+    padding-top: 10px;
+    border-left: none;
+
+    border-top: 1px solid #cccccc;
 
     .HiOutlineLocationMarker {
       padding-left: 20px;
@@ -84,6 +114,12 @@ export const Destiny = styled.div`
   label {
     margin: 12px 0 4px 20px;
   }
+`;
+
+export const BottomOfOrigin = styled.div`
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
 `;
 
 export const BottomOfDestiny = styled.div`

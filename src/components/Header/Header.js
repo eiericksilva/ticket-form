@@ -18,34 +18,32 @@ export const Container = styled.div`
 
 export const Title = styled.h1``;
 
-export const ContainerButton = styled.div`
+export const ListButton = styled.ul`
   display: flex;
-
   hr {
     margin-right: 8px;
     border: 1px solid #fff;
   }
 `;
 
-export const Button = styled.button`
+export const ItemButton = styled.a`
   padding: 0 16px 0 16px;
   height: 36px;
   margin-right: 8px;
   background-color: transparent;
   border: 1px solid #fff;
-
   font-size: 14px;
   font-weight: 500;
-  color: #fff;
   border-radius: 24px;
-
   display: flex;
   align-items: center;
   gap: 4px;
+  text-decoration: none;
+  color: white;
 
   &:hover {
+    cursor: pointer;
     background-color: #fff;
     color: #270570;
-    cursor: pointer;
   }
 `;
